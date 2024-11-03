@@ -56,9 +56,54 @@
 
                 <div class="card-body">
 
+                
                     <p class="card-text">
-                        En construcción
+                        Como se mencionó anteriormente, cada algoritmo descrito tiene su comportamiento bien definido, así como su complejidad. La siguiente tabla muestra los órdenes de complejidad correspondientes a cada algoritmo:
                     </p>
+                    
+                    <table class="table card-text">
+                        <thead>
+                            <tr>
+                                <th style="text-align: center;">Algoritmo</th>
+                                <th style="text-align: center;">Complejidad temporal del peor caso o cota superior Big O</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="text-align: center;">Ordenamiento por inserción</td>
+                                <td style="text-align: center;">O(n<sup>2</sup>)</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">Ordenamiento por selección</td>
+                                <td style="text-align: center;">O(n<sup>2</sup>)</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">Ordenamiento Burbuja</td>
+                                <td style="text-align: center;">O(n<sup>2</sup>)</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">Ordenamiento por mezcla</td>
+                                <td style="text-align: center;">O(n log n)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <p class="card-text">
+                        En la tabla se muestran las complejidades de los algoritmos en lo que llamamos el peor caso, el cual se refiere a que para toda ejecución de los algoritmos no existe un caso en el que los algoritmos reporten un peor tiempo de ejecución que el descrito por la función de complejidad temporal o cota superior.
+                    </p>
+                    
+                    <p class="card-text">
+                        Como podemos notar, los algoritmos de ordenamiento por inserción, selección y burbuja están delimitados por la misma cota superior, por lo que se puede entender que los tres definen tiempos de ejecución similares al ordenar arreglos, independientemente del tamaño del arreglo. Esto es debido a que los tres, dentro de su implementación, incluyen un par de ciclos anidados, los cuales, al combinar sus complejidades de ejecución, generan esa función de orden dos.
+                    </p>
+                    
+                    <p class="card-text">
+                        El algoritmo de ordenamiento por mezcla define una complejidad lineal que se genera al mezclar los datos que se van ordenando dentro del arreglo y una complejidad logarítmica que se genera al utilizar la técnica de divide y vencerás, al invocar recursivamente dos veces la función <strong>ordenarMezcla</strong>, lo que hace al algoritmo más eficiente que los tres anteriores para ordenar los arreglos.
+                    </p>
+                    
+                    <p class="card-text">
+                        El problema de ordenamiento se encuentra estrechamente ligado con el de búsqueda de algún registro. Por ejemplo, en el caso de una aplicación de reproducción musical, para poder encontrar un álbum específico entre la biblioteca musical, si inicialmente se ordena la lista de álbumes por artista o nombre, la búsqueda sería más eficiente y rápida, puesto que iríamos directamente a la sección de la letra en cuestión. En el siguiente tema abundaremos sobre los distintos métodos de búsqueda.
+                    </p>
+                    
 
                     <ul class="pagination justify-content-end">
                         <li class="page-item">

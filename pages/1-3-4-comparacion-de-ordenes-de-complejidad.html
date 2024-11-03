@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>1.3.3 Búsqueda indexada</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS-->
+    <!-- Local CSS-->
+    <link href="../css/header.css" rel="stylesheet" />
+    <link href="../css/navbar.css" rel="stylesheet" />
+    <link href="../css/card.css" rel="stylesheet" />
+    <link href="../css/offcanvas.css" rel="stylesheet" />
+    <link href="../css/pagination.css" rel="stylesheet" />
+    <link href="../css/footer.css" rel="stylesheet" />
+
+
+    <!-- Local CSS-->
+    <!-- Local JS-->
+    <script src="../js/headerPagesLoader.js"></script>
+    <script src="../js/navbarContentLoader.js"></script>
+    <script src="../js/offcanvasLoader.js"></script>
+    <script src="../js/footerPagesLoader.js"></script>
+    <!-- Local JS-->
+</head>
+
+<body>
+
+    <div id="offcanvas-container">
+
+    </div>
+
+
+    <!-- Header -->
+    <div id="header-container"></div>
+    <!-- Header -->
+    <!-- Navbar -->
+    <div id="navbar-container"></div>
+    <!-- Navbar -->
+    <!-- Page content -->
+
+    <main>
+        <section>
+            <div class="card">
+                <h5 class="card-header">1.3.4 Comparacion de órdenes de complejidad</h5>
+                <div class="card-body">
+
+                    <p class="card-text">
+                        Los órdenes de complejidad están relacionados con la notación Big O y con las condiciones de espacio y tiempo. La complejidad de un algoritmo se refiere a la función que mide los recursos que necesita en relación al tamaño de la entrada, considerando tanto el espacio (la cantidad de memoria requerida) como el tiempo (que incluye las operaciones básicas como acceso, aritmética y comparación).
+                    </p>
+                    
+                    <p class="card-text">
+                        Según la implementación de cada uno de los algoritmos, las órdenes de complejidad son las siguientes:
+                    </p>
+                    
+                    <table class="table card-text">
+                        <thead>
+                            <tr>
+                                <th style="text-align: center;">Algoritmo</th>
+                                <th style="text-align: center;">Complejidad temporal del peor caso o cota superior Big O</th>
+                                <th style="text-align: center;">Complejidad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="text-align: center;">Búsqueda secuencial</td>
+                                <td style="text-align: center;">O(n)</td>
+                                <td style="text-align: center;">Lineal</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">Búsqueda binaria</td>
+                                <td style="text-align: center;">O(log n)</td>
+                                <td style="text-align: center;">Logarítmico</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">Búsqueda indexada</td>
+                                <td style="text-align: center;">O(1)</td>
+                                <td style="text-align: center;">Constante</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    
+                    <p class="card-text">
+                        En el siguiente recurso, podrás observar una explicación más detallada de la tabla anterior.
+                    </p>
+                    
+                    <h4>Algoritmo de búsqueda secuencial</h4>
+                    
+                    <p class="card-text">
+                        El algoritmo de búsqueda secuencial tiene una complejidad lineal debido al ciclo for que se utiliza. En el peor de los casos, si se busca un registro que no se encuentra, se recorrerá el arreglo en su totalidad. Esto se puede visualizar gráficamente.
+                    </p>
+                    
+                    <h4>Algoritmo de búsqueda binaria</h4>
+                    
+                    <p class="card-text">
+                        La búsqueda binaria tiene una complejidad logarítmica, ya que el arreglo debe estar ordenado y permite descartar mitades del arreglo en cada iteración, lo que la hace eficiente.
+                    </p>
+                    
+                    <h4>Algoritmo de búsqueda indexada</h4>
+                    
+                    <p class="card-text">
+                        Finalmente, la búsqueda indexada tiene una complejidad constante debido a la función hash utilizada para calcular el índice del registro. Las operaciones aritméticas en la función hash se realizan en un tiempo constante, lo que optimiza la búsqueda.
+                    </p>
+                    
+                    <p class="card-text">
+                        En conclusión, es crucial elegir el algoritmo adecuado según la tarea y la cantidad de información a manejar. Con datos pequeños, cualquier algoritmo puede ser eficiente; sin embargo, con grandes volúmenes de datos, es preferible utilizar algoritmos con complejidades más bajas.
+                    </p>
+
+                    
+
+                    <ul class="pagination justify-content-end">
+                        <li class="page-item">
+                            <a class="page-link" href="1-2-el-problema-del-ordenamiento.html">Anterior</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="1-3-el-problema-de-la-busqueda.html">1</a></li>
+                        <li class="page-item"><a class="page-link" href="1-3-1-busqueda-secuencial.html">2</a></li>
+                        <li class="page-item"><a class="page-link" href="1-3-2-busqueda-binaria.html">3</a></li>
+                        <li class="page-item"><a class="page-link" href="1-3-3-busqueda-indexada.html">4</a></li>
+                        <li class="page-item active"><a class="page-link" href="1-3-4-comparacion-de-ordenes-de-complejidad.html">5</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="1-4-exploracion-exhaustiva-y-vuelta-atras.html">Siguiente
+                                Tema</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Page content -->
+    <!-- Footer -->
+    <div id="footer-container"></div>
+    <!-- Footer -->
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!-- Core theme JS-->
+</body>
+
+</html>

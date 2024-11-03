@@ -52,10 +52,33 @@
             <div class="card">
                 <h5 class="card-header">1.2.4 Ordenamiento por mezcla</h5>
                 <div class="card-body">
-
+                    
                     <p class="card-text">
-                        En construcción
-                       </p>
+                        El algoritmo de ordenamiento por mezcla, desarrollado en 1945 por John Von Neumann, consiste en combinar dos conjuntos o arreglos de datos ordenados, de tamaños <em>n</em> y <em>m</em>, respectivamente, para obtener un nuevo arreglo ordenado de tamaño <em>n + m</em>.
+                    </p>
+                    
+                    <p class="card-text">
+                        Una de las características distintivas del ordenamiento por mezcla es que es un ordenamiento estable. Esto significa que, al finalizar el proceso de ordenamiento, todos los elementos iguales mantendrán el mismo orden en el que se encontraban en el conjunto no ordenado.
+                    </p>
+                    
+                    <p class="card-text">
+                        El algoritmo utiliza la técnica de "divide y vencerás", que opera de la siguiente manera:
+                    </p>
+                    
+                    <ol class="card-text">
+                        <li>Si se tiene un solo elemento, se considera que el conjunto está ordenado.</li>
+                        <li>Si el conjunto contiene más de un elemento, se aplica la técnica dividiendo el conjunto aproximadamente a la mitad para crear dos subconjuntos. Cada uno de estos subconjuntos se procesa recursivamente con el mismo algoritmo. Cuando se alcanza el caso base (un solo elemento), se considera que el subconjunto está ordenado y se regresa de la recursividad. Durante este proceso de retorno, los dos subconjuntos se combinan para formar un nuevo conjunto ordenado. Al final, la mezcla de los subconjuntos genera un conjunto ordenado de la misma longitud que el conjunto original.</li>
+                    </ol>
+                    
+                    <p class="card-text">
+                        El ordenamiento por mezcla se fundamenta en dos principios:
+                    </p>
+                    
+                    <ol class="card-text" type="a">
+                        <li>Es más rápido ordenar un conjunto de datos pequeños que uno grande.</li>
+                        <li>Es más fácil ordenar un conjunto de datos a partir de dos conjuntos ya ordenados que a partir de dos conjuntos desordenados.</li>
+                    </ol>
+                    
 
 
                     <ul class="pagination justify-content-end">

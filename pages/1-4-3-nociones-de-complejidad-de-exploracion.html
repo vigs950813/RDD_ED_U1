@@ -55,9 +55,48 @@
                     exhaustiva y vuelta atrás</h5>
                 <div class="card-body">
 
-                    <p class="card-text">
-                        En construcción
-                       </p>
+                    <p class="card-text">Los <strong>algoritmos de exploración exhaustiva</strong> tienden a ser
+                        ineficientes debido a su necesidad de recorrer todo el espacio de búsqueda para encontrar
+                        soluciones. Este problema se agrava al explorar ramas del árbol de decisiones que no conducirán
+                        a una solución. Por lo tanto, su eficiencia se ve comprometida, especialmente en problemas
+                        complejos.</p>
+
+                    <p class="card-text">En contraste, los <strong>algoritmos de backtracking</strong> mejoran el
+                        proceso al podar ramas que ya se ha determinado que no conducirán a soluciones. Cuando el
+                        algoritmo identifica que una rama no ofrece resultados, retrocede a un punto anterior en el
+                        árbol y continúa explorando otras alternativas. Esta técnica de poda reduce la cantidad de
+                        combinaciones que deben evaluarse.</p>
+
+                    <p class="card-text">La complejidad de estos enfoques se puede describir de la siguiente manera:</p>
+                    <ul class="card-text">
+                        <li><strong>Complejidad de la exploración exhaustiva</strong>: Dado que se requieren explorar
+                            todas las combinaciones posibles para llegar a una solución, la complejidad suele ser
+                            factorial, es decir, O(n!).</li>
+                        <li><strong>Complejidad del backtracking</strong>: Gracias a la técnica de poda, la complejidad
+                            se considera exponencial, es decir, O(n<sup>n</sup>). Sin embargo, esta complejidad puede
+                            variar según factores como la cantidad de ramificaciones en el árbol, el tiempo de ejecución
+                            de la función de poda y el número de ramas que se han podado.</li>
+                    </ul>
+
+                    <h4>Conclusión</h4>
+
+                    <p class="card-text">A lo largo de esta unidad, se ha evidenciado que los algoritmos son
+                        fundamentales para el desarrollo de sistemas computacionales. Existen diversas técnicas para
+                        abordar una amplia gama de problemas, y aunque algunos algoritmos, como los de ordenamiento por
+                        mezcla o búsqueda indexada, son más eficientes, hay problemas para los cuales no se han
+                        desarrollado algoritmos eficientes conocidos. En tales casos, se recurre a métodos como la
+                        exploración exhaustiva o el backtracking.</p>
+
+                    <p class="card-text">Además, hay otras técnicas que complementan la implementación de algoritmos,
+                        como la programación dinámica, algoritmos probabilísticos, heurísticas e inteligencia
+                        artificial. Estas herramientas son útiles para resolver problemas complejos de manera más
+                        efectiva, aunque requieren un tratamiento previo de la información. Es decir, la información
+                        debe estructurarse adecuadamente para facilitar su procesamiento.</p>
+
+                    <p class="card-text">Existen diferentes estructuras de datos que permiten organizar la información,
+                        tales como pilas, colas, listas, tablas hash, árboles y grafos. Estos elementos son conocidos
+                        como tipos abstractos de datos (TAD), y se explorarán en unidades temáticas futuras.</p>
+
 
 
                     <ul class="pagination justify-content-end">
@@ -66,10 +105,12 @@
                         </li>
                         <li class="page-item"><a class="page-link" href="1-4-exploracion-exhaustiva.html">1</a></li>
                         <li class="page-item"><a class="page-link" href="1-4-1-exploracion-exhaustiva.html">2</a></li>
-                        <li class="page-item"><a class="page-link" href="1-4-2-programacion-por-vuelta-atras.html">3</a></li>
-                        <li class="page-item active"><a class="page-link" href="1-4-3-nociones-de-complejidad-de-exploracion.html">4</a></li>
+                        <li class="page-item"><a class="page-link" href="1-4-2-programacion-por-vuelta-atras.html">3</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link"
+                                href="1-4-3-nociones-de-complejidad-de-exploracion.html">4</a></li>
                         <li class="page-item">
-                            <a class="page-link" href="bibliografia.html">Siguiente Tema</a>
+                            <a class="page-link" href="bibliografia.html">Lista de referencias bibliográficas</a>
                         </li>
                     </ul>
 
