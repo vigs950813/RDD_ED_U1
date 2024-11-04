@@ -53,8 +53,7 @@
     <main>
         <section>
             <div class="card">
-                <h3 class="card-header">Actividad 1.2: Cuestionario de administración de almacenamiento, memoria de
-                    intercambio, manejo de memoria con mapa de bits y con listas ligadas
+                <h3 class="card-header">Actividad 1.2: Cuestionario general de algoritmos de ordenamiento.
                 </h3>
                 <div class="card-body">
 
@@ -84,138 +83,77 @@
                     </p>
 
                     <div class="question" style="text-align: justify;">
-                        <h2 style="font-size: 17px; font-weight: bold;">1. Se encarga de asignar y liberar espacio en el
-                            almacenamiento para los archivos y datos del sistema y de los usuarios. Esto incluye
-                            técnicas como el particionamiento del disco, la gestión de archivos y la administración del
-                            espacio libre.
-                        </h2>
-                        <input type="radio" name="q1" value="a"> <b>a)</b> Sistemas de Archivos.<br>
-                        <input type="radio" name="q1" value="b"> <b>b)</b> Gestión de Cuotas.<br>
-                        <input type="radio" name="q1" value="c"> <b>c)</b> Administración de Espacio.<br>
+                        <h2 style="font-size: 17px; font-weight: bold;">1. ¿Cuál de los siguientes algoritmos de ordenamiento tiene una complejidad promedio de O(n²)?</h2>
+                        <input type="radio" name="q1" value="a"> <b>a)</b> Mezcla (Merge Sort).<br>
+                        <input type="radio" name="q1" value="b"> <b>b)</b> Selección (Selection Sort).<br>
+                        <input type="radio" name="q1" value="c"> <b>c)</b> Quick Sort.<br>
+                        <span id="feedback-q1"></span>
                     </div>
                     <br>
-
                     <div class="question" style="text-align: justify;">
-                        <h2 style="font-size: 17px; font-weight: bold;">2. Define la estructura y el método para
-                            almacenar y organizar archivos en dispositivos de almacenamiento. Los sistemas de archivos
-                            pueden variar en complejidad y características, desde simples sistemas como FAT (Tabla de
-                            Asignación de Archivos) hasta sistemas avanzados como NTFS (Sistema de Archivos de Nueva
-                            Tecnologí<b>a)</b> en Windows o ext4 (Sistema de archivos extendido 4) en sistemas Linux.</h2>
-                        <input type="radio" name="q2" value="a"> <b>a)</b> Sistemas de Archivos.<br>
-                        <input type="radio" name="q2" value="b"> <b>b)</b> Gestión de Cuotas.<br>
-                        <input type="radio" name="q2" value="c"> <b>c)</b> Administración de Espacio.<br>
-                        
+                        <h2 style="font-size: 17px; font-weight: bold;">2. ¿Cuál es la principal ventaja del ordenamiento por mezcla (Merge Sort) frente al burbuja (Bubble Sort)?</h2>
+                        <input type="radio" name="q2" value="a"> <b>a)</b> Menor uso de memoria.<br>
+                        <input type="radio" name="q2" value="b"> <b>b)</b> Complejidad promedio O(n log n).<br>
+                        <input type="radio" name="q2" value="c"> <b>c)</b> Funciona mejor para listas pequeñas.<br>
                         <span id="feedback-q2"></span>
                     </div>
                     <br>
-
                     <div class="question" style="text-align: justify;">
-                        <h2 style="font-size: 17px; font-weight: bold;">3. Permite establecer límites en el espacio de
-                            almacenamiento que los usuarios o grupos de usuarios pueden utilizar. Esto ayuda a prevenir
-                            el uso excesivo de recursos y garantiza una distribución equitativa del almacenamiento entre
-                            los usuarios.
-                        </h2>
-                        <input type="radio" name="q3" value="a"> <b>a)</b> Sistemas de Archivos.<br>
-                        <input type="radio" name="q3" value="b"> <b>b)</b> Gestión de Cuotas.<br>
-                        <input type="radio" name="q3" value="c"> <b>c)</b> Administración de Espacio.<br>
-                        
+                        <h2 style="font-size: 17px; font-weight: bold;">3. En el ordenamiento por inserción (Insertion Sort), ¿qué sucede en cada paso principal del algoritmo?</h2>
+                        <input type="radio" name="q3" value="a"> <b>a)</b> Se selecciona el elemento más pequeño y se coloca en la posición final.<br>
+                        <input type="radio" name="q3" value="b"> <b>b)</b> Cada elemento se coloca en su posición correcta respecto a los elementos previos.<br>
+                        <input type="radio" name="q3" value="c"> <b>c)</b> Se intercambia el primer elemento con el último hasta ordenar la lista.<br>
                         <span id="feedback-q3"></span>
                     </div>
                     <br>
-
                     <div class="question" style="text-align: justify;">
-                        <h2 style="font-size: 17px; font-weight: bold;">4. Los sistemas operativos utilizan la memoria
-                            de intercambio y sus ventajas son:</h2>
-                        <input type="radio" name="q4" value="a"> <b>a)</b> Puede ralentizar el sistema si hay un intercambio
-                        excesivo de datos entre la RAM y el almacenamiento secundario.<br>
-                        <input type="radio" name="q4" value="b"> <b>b)</b> Aumenta la carga en el disco duro o la unidad de
-                        estado sólido, lo que puede reducir su vida útil.<br>
-                        <input type="radio" name="q4" value="c"> <b>c)</b> Permite ejecutar aplicaciones que requieren más
-                        memoria que la disponible físicamente, ayuda a evitar que los programas se cierren
-                        inesperadamente debido a la falta de memoria y es multitarea que ejecutan simultáneamente.
-                        <br>
-                        
+                        <h2 style="font-size: 17px; font-weight: bold;">4. ¿Cuál de estos algoritmos es el más adecuado para ordenar un conjunto de datos ya casi ordenado?</h2>
+                        <input type="radio" name="q4" value="a"> <b>a)</b> Burbuja (Bubble Sort).<br>
+                        <input type="radio" name="q4" value="b"> <b>b)</b> Inserción (Insertion Sort).<br>
+                        <input type="radio" name="q4" value="c"> <b>c)</b> Selección (Selection Sort).<br>
                         <span id="feedback-q4"></span>
                     </div>
                     <br>
-
                     <div class="question" style="text-align: justify;">
-                        <h2 style="font-size: 17px; font-weight: bold;">5. Los sistemas operativos utilizan la memoria
-                            de intercambio y sus ventajas son:</h2>
-                        <input type="radio" name="q5" value="a"> <b>a)</b> Puede ralentizar el sistema si hay un intercambio
-                        excesivo de datos entre la RAM y el almacenamiento secundario y aumenta la carga en el disco
-                        duro o la unidad de estado sólido, lo que puede reducir su vida útil.<br>
-                        <input type="radio" name="q5" value="b"> <b>b)</b> Permite ejecutar aplicaciones que requieren más
-                        memoria que la disponible físicamente, ayuda a evitar que los programas se cierren
-                        inesperadamente debido a la falta de memoria y es multitarea que ejecutan simultáneamente.<br>
-                        <input type="radio" name="q5" value="c"> <b>c)</b> Permite establecer límites en el espacio de
-                        almacenamiento que los usuarios o grupos de usuarios pueden utilizar.<br>
-                        
+                        <h2 style="font-size: 17px; font-weight: bold;">5. El ordenamiento por selección (Selection Sort) trabaja eficientemente en…</h2>
+                        <input type="radio" name="q5" value="a"> <b>a)</b> Listas grandes y desordenadas.<br>
+                        <input type="radio" name="q5" value="b"> <b>b)</b> Listas pequeñas.<br>
+                        <input type="radio" name="q5" value="c"> <b>c)</b> Listas de números repetidos.<br>
                         <span id="feedback-q5"></span>
                     </div>
                     <br>
-
                     <div class="question" style="text-align: justify;">
-                        <h2 style="font-size: 17px; font-weight: bold;">6. Los sistemas operativos utilizan el manejo de
-                            memoria con mapas de bits y sus características son:</h2>
-                        <input type="radio" name="q6" value="a"> <b>a)</b> Bloques de memoria están asignados y cuáles están
-                        libres, el uso de un mapa de bits, una estructura de datos que representa cada bloque de memoria
-                        como un bit en una secuencia binaria y es esencial.<br>
-                        <input type="radio" name="q6" value="b"> <b>b)</b> Permite ejecutar aplicaciones que requieren más
-                        memoria que la disponible físicamente, ayuda a evitar que los programas se cierren
-                        inesperadamente debido a la falta de memoria y es multitarea que ejecutan simultáneamente.<br>
-                        <input type="radio" name="q6" value="c"> <b>c)</b> Permite establecer límites en el espacio de
-                        almacenamiento que los usuarios o grupos de usuarios pueden utilizar.<br>
+                        <h2 style="font-size: 17px; font-weight: bold;">6. ¿Cuál de los siguientes algoritmos de ordenamiento es considerado un algoritmo de división y conquista?</h2>
+                        <input type="radio" name="q6" value="a"> <b>a)</b> Inserción (Insertion Sort).<br>
+                        <input type="radio" name="q6" value="b"> <b>b)</b> Burbuja (Bubble Sort).<br>
+                        <input type="radio" name="q6" value="c"> <b>c)</b> Mezcla (Merge Sort).<br>
                         <span id="feedback-q6"></span>
                     </div>
                     <br>
-
                     <div class="question" style="text-align: justify;">
-                        <h2 style="font-size: 17px; font-weight: bold;">7. El manejo de memoria con listas ligadas es...
-                        </h2>
-                        <input type="radio" name="q7" value="a"> <b>a)</b> Bloques de memoria están asignados y cuáles están
-                        libres, el uso de un mapa de bits, una estructura de datos que representa cada bloque de memoria
-                        como un bit en una secuencia binaria y es esencial.
-                        <br>
-                        <input type="radio" name="q7" value="b"> <b>b)</b> Un método para gestionar la memoria constante que
-                        se asigna a los procesos de un sistema operativo.<br>
-                        <input type="radio" name="q7" value="c"> <b>c)</b> Puede ralentizar el sistema si hay un intercambio
-                        excesivo de datos entre la RAM y el almacenamiento secundario.
-                        <br>
-                        
+                        <h2 style="font-size: 17px; font-weight: bold;">7. En términos de complejidad, ¿cuál es el orden de crecimiento del ordenamiento burbuja (Bubble Sort) en el peor caso?</h2>
+                        <input type="radio" name="q7" value="a"> <b>a)</b> O(n log n).<br>
+                        <input type="radio" name="q7" value="b"> <b>b)</b> O(n).<br>
+                        <input type="radio" name="q7" value="c"> <b>c)</b> O(n²).<br>
                         <span id="feedback-q7"></span>
                     </div>
                     <br>
-
                     <div class="question" style="text-align: justify;">
-                        <h2 style="font-size: 17px; font-weight: bold;">8. El manejo de memoria con listas tiene como
-                            características:</h2>
-                        <input type="radio" name="q8" value="a"> <b>a)</b> Una lista de bloques de memoria asignados, cada uno
-                        de los cuales tiene información sobre su tamaño y posición, además de un enlace al siguiente
-                        bloque en la lista.<br>
-                        <input type="radio" name="q8" value="b"> <b>b)</b> Bloques de memoria están asignados y cuáles están
-                        libres, el uso de un mapa de bits, una estructura de datos que representa cada bloque de memoria
-                        como un bit en una secuencia binaria y es esencial.<br>
-                        <input type="radio" name="q8" value="c"> <b>c)</b> Permite ejecutar aplicaciones que requieren más
-                        memoria que la disponible físicamente, ayuda a evitar que los programas se cierren
-                        inesperadamente debido a la falta de memoria y es multitarea que ejecutan simultáneamente.<br>
+                        <h2 style="font-size: 17px; font-weight: bold;">8. ¿Qué tipo de ordenamiento es el más adecuado si se desea conservar el orden relativo de los elementos iguales (estable)?</h2>
+                        <input type="radio" name="q8" value="a"> <b>a)</b> Mezcla (Merge Sort).<br>
+                        <input type="radio" name="q8" value="b"> <b>b)</b> Selección (Selection Sort).<br>
+                        <input type="radio" name="q8" value="c"> <b>c)</b> Quick Sort.<br>
                         <span id="feedback-q8"></span>
                     </div>
                     <br>
-
                     <div class="question" style="text-align: justify;">
-                        <h2 style="font-size: 17px; font-weight: bold;">9. Cuando el sistema operativo crea un bloque de
-                            memoria y lo incluye en la lista ligada dentro de un proceso necesita memoria y genera:</h2>
-                        <input type="radio" name="q9" value="a"> <b>a)</b> Una lista de bloques de memoria asignados, cada uno
-                        de los cuales tiene información sobre su tamaño y posición, además de un enlace al siguiente
-                        bloque en la lista.<br>
-                        <input type="radio" name="q9" value="b"> <b>b)</b> El bloque se elimina de la lista por el sistema
-                        operativo cuando se libera memoria, esto facilita el manejo de la memoria fragmentada y permite
-                        un acceso rápido a los bloques de memoria asignados.<br>
-                        <input type="radio" name="q9" value="c"> <b>c)</b> Puede ralentizar el sistema si hay un intercambio
-                        excesivo de datos entre la RAM y el almacenamiento secundario.<br>
-                        <span id="feedback-q8"></span>
+                        <h2 style="font-size: 17px; font-weight: bold;">9. ¿Cuál de los siguientes pares de algoritmos tienen el mismo orden de complejidad en el peor caso?</h2>
+                        <input type="radio" name="q9" value="a"> <b>a)</b> Inserción (Insertion Sort) y Mezcla (Merge Sort).<br>
+                        <input type="radio" name="q9" value="b"> <b>b)</b> Burbuja (Bubble Sort) y Selección (Selection Sort).<br>
+                        <input type="radio" name="q9" value="c"> <b>c)</b> Quick Sort y Selección (Selection Sort).<br>
+                        <span id="feedback-q9"></span>
                     </div>
+                    
                     <br>
 
                     <div class="container text-center">
@@ -237,21 +175,19 @@
 
                     <ul class="pagination justify-content-end">
                         <li class="page-item">
-                          <a class="page-link" href="../index.html">Anterior</a>
+                            <a class="page-link" href="1-1-algoritmia.html">Anterior</a>
                         </li>
-                        <li class="page-item"><a class="page-link" href="introduccion.html">1</a></li>
-                        <li class="page-item"><a class="page-link" href="3-1-abstraccion-de-memoria.html">2</a></li>
-                        <li class="page-item"><a class="page-link" href="3-1-1-organizacion-de-la-memoria.html">3</a></li>
-                        <li class="page-item"><a class="page-link" href="3-1-2-administracion-de-almacenamiento.html">4</a></li>
-                        <li class="page-item"><a class="page-link" href="3-1-3-memoria-de-intercambio.html">5</a></li>
-                        <li class="page-item"><a class="page-link" href="3-1-4-manejo-de-memoria-con-mapa-de-bits.html">6</a></li>
-                        <li class="page-item"><a class="page-link" href="3-1-5-manejo-de-memoria-con-listas-ligadas.html">7</a></li>
-                        <li class="page-item"><a class="page-link" href="actividad-1.html">8</a></li>
-                        <li class="page-item active"><a class="page-link" href="actividad-2.html">9</a></li>
+                        <li class="page-item"><a class="page-link" href="1-2-el-problema-del-ordenamiento.html">1</a></li>
+                        <li class="page-item"><a class="page-link" href="1-2-1-ordenamiento-por-insercion.html">2</a></li>
+                        <li class="page-item"><a class="page-link" href="1-2-2-ordenamiento-por-seleccion.html">3</a></li>
+                        <li class="page-item"><a class="page-link" href="1-2-3-ordenamiento-de-burbuja.html">4</a></li>
+                        <li class="page-item"><a class="page-link" href="1-2-4-ordenamiento-por-mezcla.html">5</a></li>
+                        <li class="page-item"><a class="page-link" href="1-2-5-comparacion-de-ordenes-de-complejidad.html">6</a></li>
+                        <li class="page-item active"><a class="page-link" href="actividad-2.html">7</a></li>
                         <li class="page-item">
-                          <a class="page-link" href="3-2-memoria-virtual.html">Siguiente Tema</a>
+                            <a class="page-link" href="1-3-el-problema-de-la-busqueda.html">Siguiente Tema</a>
                         </li>
-                      </ul>
+                    </ul>
 
                 </div>
             </div>
