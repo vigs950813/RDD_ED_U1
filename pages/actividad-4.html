@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Actividad 3.1: Cuestionario general de segmentación y sustitución de páginas</title>
+    <title>Actividad 4: Cuestionario general de exploración exhaustiva y vuelta atrás</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Bootstrap CSS-->
@@ -79,23 +79,32 @@
                     </p>
 
                     <div class="question" style="text-align: justify;">
-                        <h2 style="font-size: 17px; font-weight: bold;">1. ¿Qué es la programación por exploración exhaustiva?</h2>
-                        <input type="radio" name="q1" value="a"> <b>a)</b> Un método que busca soluciones óptimas mediante la eliminación de opciones no viables.<br>
-                        <input type="radio" name="q1" value="b"> <b>b)</b> Una técnica que evalúa todas las combinaciones posibles para encontrar la solución más adecuada.<br>
-                        <input type="radio" name="q1" value="c"> <b>c)</b> Un enfoque que se basa en la aleatorización para resolver problemas complejos.<br>
+                        <h2 style="font-size: 17px; font-weight: bold;">1. ¿Qué es la programación por exploración
+                            exhaustiva?</h2>
+                        <input type="radio" name="q1" value="a"> <b>a)</b> Un método que busca soluciones óptimas
+                        mediante la eliminación de opciones no viables.<br>
+                        <input type="radio" name="q1" value="b"> <b>b)</b> Una técnica que evalúa todas las
+                        combinaciones posibles para encontrar la solución más adecuada.<br>
+                        <input type="radio" name="q1" value="c"> <b>c)</b> Un enfoque que se basa en la aleatorización
+                        para resolver problemas complejos.<br>
                         <span id="feedback-q1"></span>
                     </div>
                     <br>
                     <div class="question" style="text-align: justify;">
-                        <h2 style="font-size: 17px; font-weight: bold;">2. ¿Cuál de las siguientes afirmaciones describe mejor la técnica de vuelta atrás (backtracking)?</h2>
-                        <input type="radio" name="q2" value="a"> <b>a)</b> Se enfoca en dividir y conquistar problemas complejos.<br>
-                        <input type="radio" name="q2" value="b"> <b>b)</b> Explora cada posibilidad y retrocede cuando encuentra una solución no válida.<br>
-                        <input type="radio" name="q2" value="c"> <b>c)</b> Utiliza heurísticas para reducir el espacio de búsqueda de forma eficiente.<br>
+                        <h2 style="font-size: 17px; font-weight: bold;">2. ¿Cuál de las siguientes afirmaciones describe
+                            mejor la técnica de vuelta atrás (backtracking)?</h2>
+                        <input type="radio" name="q2" value="a"> <b>a)</b> Se enfoca en dividir y conquistar problemas
+                        complejos.<br>
+                        <input type="radio" name="q2" value="b"> <b>b)</b> Explora cada posibilidad y retrocede cuando
+                        encuentra una solución no válida.<br>
+                        <input type="radio" name="q2" value="c"> <b>c)</b> Utiliza heurísticas para reducir el espacio
+                        de búsqueda de forma eficiente.<br>
                         <span id="feedback-q2"></span>
                     </div>
                     <br>
                     <div class="question" style="text-align: justify;">
-                        <h2 style="font-size: 17px; font-weight: bold;">3. ¿Cuál es la complejidad temporal en el peor caso para la exploración exhaustiva en un problema con \( n \) elementos?</h2>
+                        <h2 style="font-size: 17px; font-weight: bold;">3. ¿Cuál es la complejidad temporal en el peor
+                            caso para la exploración exhaustiva en un problema con \( n \) elementos?</h2>
                         <input type="radio" name="q3" value="a"> <b>a)</b> O(n)<br>
                         <input type="radio" name="q3" value="b"> <b>b)</b> O(n!)<br>
                         <input type="radio" name="q3" value="c"> <b>c)</b> O(2^n)<br>
@@ -103,15 +112,20 @@
                     </div>
                     <br>
                     <div class="question" style="text-align: justify;">
-                        <h2 style="font-size: 17px; font-weight: bold;">4. ¿En qué situaciones es más adecuado usar la técnica de vuelta atrás?</h2>
-                        <input type="radio" name="q4" value="a"> <b>a)</b> Problemas donde se puede definir claramente un conjunto de soluciones válidas.<br>
-                        <input type="radio" name="q4" value="b"> <b>b)</b> Problemas donde no se requiere optimización y se puede aceptar cualquier solución.<br>
-                        <input type="radio" name="q4" value="c"> <b>c)</b> Problemas que no tienen restricciones en la solución.<br>
+                        <h2 style="font-size: 17px; font-weight: bold;">4. ¿En qué situaciones es más adecuado usar la
+                            técnica de vuelta atrás?</h2>
+                        <input type="radio" name="q4" value="a"> <b>a)</b> Problemas donde se puede definir claramente
+                        un conjunto de soluciones válidas.<br>
+                        <input type="radio" name="q4" value="b"> <b>b)</b> Problemas donde no se requiere optimización y
+                        se puede aceptar cualquier solución.<br>
+                        <input type="radio" name="q4" value="c"> <b>c)</b> Problemas que no tienen restricciones en la
+                        solución.<br>
                         <span id="feedback-q4"></span>
                     </div>
                     <br>
                     <div class="question" style="text-align: justify;">
-                        <h2 style="font-size: 17px; font-weight: bold;">5. ¿Cuál es la complejidad de tiempo de la técnica de vuelta atrás en un problema de permutaciones?</h2>
+                        <h2 style="font-size: 17px; font-weight: bold;">5. ¿Cuál es la complejidad de tiempo de la
+                            técnica de vuelta atrás en un problema de permutaciones?</h2>
                         <input type="radio" name="q5" value="a"> <b>a)</b> O(n)<br>
                         <input type="radio" name="q5" value="b"> <b>b)</b> O(n^2)<br>
                         <input type="radio" name="q5" value="c"> <b>c)</b> O(n!)<br>
@@ -119,37 +133,51 @@
                     </div>
                     <br>
                     <div class="question" style="text-align: justify;">
-                        <h2 style="font-size: 17px; font-weight: bold;">6. ¿Qué tipo de problemas se benefician más de la exploración exhaustiva?</h2>
-                        <input type="radio" name="q6" value="a"> <b>a)</b> Problemas donde hay múltiples soluciones óptimas.<br>
-                        <input type="radio" name="q6" value="b"> <b>b)</b> Problemas de optimización que requieren la mejor solución posible.<br>
-                        <input type="radio" name="q6" value="c"> <b>c)</b> Problemas donde es fácil encontrar una solución factible.<br>
+                        <h2 style="font-size: 17px; font-weight: bold;">6. ¿Qué tipo de problemas se benefician más de
+                            la exploración exhaustiva?</h2>
+                        <input type="radio" name="q6" value="a"> <b>a)</b> Problemas donde hay múltiples soluciones
+                        óptimas.<br>
+                        <input type="radio" name="q6" value="b"> <b>b)</b> Problemas de optimización que requieren la
+                        mejor solución posible.<br>
+                        <input type="radio" name="q6" value="c"> <b>c)</b> Problemas donde es fácil encontrar una
+                        solución factible.<br>
                         <span id="feedback-q6"></span>
                     </div>
                     <br>
                     <div class="question" style="text-align: justify;">
-                        <h2 style="font-size: 17px; font-weight: bold;">7. ¿Cómo se caracteriza la complejidad espacial de la técnica de vuelta atrás?</h2>
-                        <input type="radio" name="q7" value="a"> <b>a)</b> Siempre es O(1), independientemente del tamaño del problema.<br>
-                        <input type="radio" name="q7" value="b"> <b>b)</b> Depende de la profundidad del árbol de recursión.<br>
-                        <input type="radio" name="q7" value="c"> <b>c)</b> Es lineal con respecto al número de elementos en el problema.<br>
+                        <h2 style="font-size: 17px; font-weight: bold;">7. ¿Cómo se caracteriza la complejidad espacial
+                            de la técnica de vuelta atrás?</h2>
+                        <input type="radio" name="q7" value="a"> <b>a)</b> Siempre es O(1), independientemente del
+                        tamaño del problema.<br>
+                        <input type="radio" name="q7" value="b"> <b>b)</b> Depende de la profundidad del árbol de
+                        recursión.<br>
+                        <input type="radio" name="q7" value="c"> <b>c)</b> Es lineal con respecto al número de elementos
+                        en el problema.<br>
                         <span id="feedback-q7"></span>
                     </div>
                     <br>
                     <div class="question" style="text-align: justify;">
-                        <h2 style="font-size: 17px; font-weight: bold;">8. ¿Qué estrategia se utiliza comúnmente para mejorar la eficiencia en problemas que aplican vuelta atrás?</h2>
-                        <input type="radio" name="q8" value="a"> <b>a)</b> Eliminar las soluciones no válidas de manera anticipada.<br>
-                        <input type="radio" name="q8" value="b"> <b>b)</b> Usar un algoritmo de búsqueda en profundidad.<br>
-                        <input type="radio" name="q8" value="c"> <b>c)</b> Implementar un enfoque de programación dinámica.<br>
+                        <h2 style="font-size: 17px; font-weight: bold;">8. ¿Qué estrategia se utiliza comúnmente para
+                            mejorar la eficiencia en problemas que aplican vuelta atrás?</h2>
+                        <input type="radio" name="q8" value="a"> <b>a)</b> Eliminar las soluciones no válidas de manera
+                        anticipada.<br>
+                        <input type="radio" name="q8" value="b"> <b>b)</b> Usar un algoritmo de búsqueda en
+                        profundidad.<br>
+                        <input type="radio" name="q8" value="c"> <b>c)</b> Implementar un enfoque de programación
+                        dinámica.<br>
                         <span id="feedback-q8"></span>
                     </div>
                     <br>
                     <div class="question" style="text-align: justify;">
-                        <h2 style="font-size: 17px; font-weight: bold;">9. ¿Qué limitación tiene la programación por exploración exhaustiva?</h2>
+                        <h2 style="font-size: 17px; font-weight: bold;">9. ¿Qué limitación tiene la programación por
+                            exploración exhaustiva?</h2>
                         <input type="radio" name="q9" value="a"> <b>a)</b> No puede encontrar soluciones óptimas.<br>
-                        <input type="radio" name="q9" value="b"> <b>b)</b> Es ineficiente para problemas grandes debido a su alta complejidad.<br>
+                        <input type="radio" name="q9" value="b"> <b>b)</b> Es ineficiente para problemas grandes debido
+                        a su alta complejidad.<br>
                         <input type="radio" name="q9" value="c"> <b>c)</b> No puede ser paralelizada.<br>
                         <span id="feedback-q9"></span>
                     </div>
-                   
+
                     <br>
 
                     <div class="container text-center">
@@ -169,16 +197,19 @@
 
                     <br>
 
-                    
+
                     <ul class="pagination justify-content-end">
                         <li class="page-item">
-                            <a class="page-link" href="3-2-memoria-virtual.html">Anterior</a>
+                            <a class="page-link" href="1-3-el-problema-de-la-busqueda.html">Anterior</a>
                         </li>
-                        <li class="page-item"><a class="page-link" href="3-3-segmentacion.html">1</a></li>
-                        <li class="page-item"><a class="page-link" href="3-3-1-implementacion-de-la-segmentacion-pura.html">2</a></li>
-                        <li class="page-item"><a class="page-link" href="3-3-2-segmentacion-por-paginacion.html">3</a>
-                        <li class="page-item active"><a class="page-link" href="actividad-4.html">4</a>
+                        <li class="page-item"><a class="page-link" href="1-4-exploracion-exhaustiva-y-vuelta-atras.html">1</a>
                         </li>
+                        <li class="page-item"><a class="page-link" href="1-4-1-exploracion-exhaustiva.html">2</a></li>
+                        <li class="page-item"><a class="page-link" href="1-4-2-programacion-por-vuelta-atras.html">3</a>
+                        </li>
+                        <li class="page-item"><a class="page-link"
+                                href="1-4-3-nociones-de-complejidad-de-exploracion.html">4</a></li>
+                        <li class="page-item active"><a class="page-link" href="actividad-4.html">5</a></li>
                         <li class="page-item">
                             <a class="page-link" href="bibliografia.html">Lista de referencias bibliográficas</a>
                         </li>
