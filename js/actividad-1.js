@@ -1,4 +1,40 @@
-function validarRespuestas() {
+function checkAnswers() {
+    let correctCount = 0;
+    let incorrectCount = 0;
+
+    function checkAnswer(questionName, correctAnswer, feedbackId, explanation) {
+        const feedbackSpan = document.getElementById(feedbackId);
+        
+        const textAnswer = document.querySelector(`input[name=${questionName}]`).value.trim();
+        if (textAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+            correctCount++;
+            feedbackSpan.innerHTML = "<span style='color: green;'>Respuesta correcta</span>";
+        } else {
+            incorrectCount++;
+            feedbackSpan.innerHTML = `<span style='color: red;'>Respuesta incorrecta. ${explanation}</span>`;
+        }
+    }
+
+    // Validar preguntas de texto
+    checkAnswer('q1', 'Es un conjunto de pasos, procedimientos o acciones que nos permiten alcanzar un resultado o resolver un problema.', 'feedback-q1', 'Un algoritmo debe indicar los pasos para llegar a un resultado.');
+    checkAnswer('q2', 'Un algoritmo debe ser Preciso, Definido, Finito cumplir también con una secuencia de instrucciones claras y finitas, debe ser correcto y debe resolver el problema planteado en todas sus facetas y ser legible.', 'feedback-q2', 'Un algoritmo debe ser preciso, definido, finito, correcto, resolver el problema y ser legible.');
+    checkAnswer('q3', 'Indicar el orden de realización de cada paso.', 'feedback-q3', 'Precisión implica especificar el orden en que deben realizarse los pasos.');
+    checkAnswer('q4', 'Que si se sigue un algoritmo dos veces, se debe obtener el mismo resultado.', 'feedback-q4', 'Definición implica que siempre produce el mismo resultado en las mismas condiciones.');
+    checkAnswer('q5', 'Que un algoritmo se debe terminar el algún momento.', 'feedback-q5', 'Finitud implica que el algoritmo no debe ejecutarse indefinidamente.');
+    checkAnswer('q6', 'Diseño de programas: Análisis del problema y Diseño del algoritmo. En la computadora: Codificación del algoritmo, Ejecución y Verificación del programa, y Mantenimiento (documentación).', 'feedback-q6', 'Las fases son análisis, diseño, codificación, ejecución, verificación y mantenimiento.');
+    checkAnswer('q7', 'Definir y entender el problema, Identificar los datos de entrada e Identificar los datos de salida o el resultado.', 'feedback-q7', 'En el análisis, se define el problema y se identifican entradas y salidas.');
+    checkAnswer('q8', 'Diseño descendente, Refinamiento por pasos y Las herramientas de programación que son: Diagramas de flujo y Pseudocódigo.', 'feedback-q8', 'En el diseño se descompone en pasos y se usan herramientas como diagramas de flujo y pseudocódigo.');
+    checkAnswer('q9', 'Área de un triangulo, de un cuadrado, de un círculo, el perímetro de un rectángulo, la multiplicación y suma de números, almacenar nombres, teléfonos, direcciones y calificaciones.', 'feedback-q9', 'Ejemplos incluyen cálculo de áreas, operaciones básicas y almacenamiento de información.');
+    checkAnswer('q10', 'Préstamo económico y material, sanar enfermedades, compra de objetos, componer un material, preparar alimentos por si sola, reparar fuga de gas, atrapar un delincuente, apagar un incendio y cambiar una llanta de auto.', 'feedback-q10', 'Problemas no computables incluyen actividades físicas o humanas no susceptibles de ser resueltas por algoritmos.');
+
+    // Mostrar el número total de respuestas correctas si lo deseas
+    console.log(`Respuestas correctas: ${correctCount}`);
+    console.log(`Respuestas incorrectas: ${incorrectCount}`);
+}
+
+
+
+/*function validarRespuestas() {
     // Definir las respuestas correctas
     const respuestasCorrectas = {
         q1: 'v',
@@ -74,4 +110,4 @@ function validarRespuestas() {
             return; // Detener la validación si hay un error
         }
     }
-}
+}*/
